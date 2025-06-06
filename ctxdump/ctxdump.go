@@ -7,7 +7,8 @@ import (
 	"unsafe"
 )
 
-func ContextDump(ctx context.Context) {
+func ContextDump(ctx context.Context, label string) {
+	fmt.Println("Context Dump:", label)
 	contextDump(ctx, false)
 }
 
